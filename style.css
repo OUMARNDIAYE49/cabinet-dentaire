@@ -11,21 +11,24 @@
 body{
      font-family: Arial, sans-serif;
     margin-top: 0;
-    padding: 0; 
+    padding: 0;
+    overflow-x: hidden;
     
 }
 
-header{
+.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 250px;
-    width: 4500px;
+    width: 100%;
     background-color: #ffffff;
     position: fixed;
     top: 0;
     z-index: 10;
+    border-bottom: 9px solid #f8fafc;
 }
+
 
 .header img{
     width: 600px;
@@ -63,24 +66,15 @@ button.appoi {
     margin-right: 350px;
 
 }
-.header::after{
-    content: "";
-    width: 3600px;
-    height: 4px;
-    position: absolute;
-    left: 450px;
-    bottom: 1750px;
-    background-color: #ccc;
-}
 
 /* section */
 #maison{
-    width: 4300px;
-    height: 1300px;
-    margin-top: 80px;
+    width: 100%;
+    height: 1500px;
+    margin-top: 120px;
     display: flex;
      margin-left: 10%;
-    margin-right: 10%; 
+    margin-right: 10%;  
     justify-content: space-between;
 }
 #maison .left{
@@ -89,11 +83,13 @@ button.appoi {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 40px;
 }
 
 #maison .left h1{
-    font-size: 190px;
+    font-size: 180px;
     font-weight: bold;
+
 
 }
 #maison .left h1 span{
@@ -110,37 +106,43 @@ button.appoi {
     background-color: #0056b3;
     color: white;
     width: 510px;
-    height: 190px;
+    height: 170px;
     font-size: 30px;
     border-radius: 10px;
-    margin-bottom: -70px;
+    margin-bottom: 300px;
+    position: relative;
     
 }
-#maison .left input {
+#maison .left .more{
+    position: absolute;
+    background-color:#ffffff;
     color: black;
     width: 510px;
-    height: 190px;
+    height: 170px;
     font-size: 30px;
     border-radius: 10px;
-    margin-left: 580px;
-    margin-bottom: 70px;
-    margin-top: -120px;
-    text-align: center;
-    font-weight: bold;
+    margin-bottom: -570px;
+    margin-left: 800px;
+    
 }
+
 #maison .right{
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right:300px;
 
 }
-#maison .right img{ width: 50%; width: 50%;}
+#maison .right img{
+     width: 50%; 
+    
+}
 
 /* section rendvous */
 #rendvous{
-    width: 4405px;
+    width: 100%;
     height: 500px;
     margin-top: 80px;
     display: flex;
@@ -179,14 +181,13 @@ button.appoi {
 
 }
 .consul{
-    border: 3px solid black;
     width: 200px;
     height: 180px;
     border-radius: 15px;
     padding: 40px; 
     display: flex;
     margin-left: 0;
-     margin-right: 950px; 
+     margin-right: 1150px; 
     text-align: center;
     background-color: #f8fafc;
     font-size: 37px;
@@ -195,7 +196,6 @@ button.appoi {
     font-weight: bold;
 }
 .consult{
-    border: 3px solid black;
     width: 240px;
     height: 220px;
     border-radius: 15px;
@@ -209,8 +209,8 @@ button.appoi {
     flex-direction: column;
     color: #777777;
     font-weight: bold;
-}.consulti{
-    border: 3px solid black;
+}
+.consulti{
     width: 240px;
     height: 220px;
     border-radius: 15px;
@@ -250,14 +250,12 @@ button.appoi {
 /* section visite */
 #visit{
     height: 1000px;
-    width: 4300px;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
     justify-content: space-between;
     background-color: #ffffff;
-    margin-right: 160px;
+
 
 }
 #visit .left{
@@ -309,15 +307,16 @@ button.appoi {
 
 /* section bare */
 #bare{
-    width: 4500px;
+    width: 100%;
     height: 500px;
     display: flex;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%; 
     justify-content: space-between;
     background-color: #ffffff;
     position: relative;
+    margin-top: 150px;
     
 }
 
@@ -325,14 +324,15 @@ button.appoi {
     margin-top: 50px;
     position: relative;
    text-align: center;
-    width:4300px;
-    height: 50%;
+    width:2000px;
+    /* height: 50%; */
+    margin-right: 2200px;
    
 }
 .separation h1{
     font-size: 95px;
     margin-top: 10px;
-    margin-left: -4000px;
+    margin-left: -2000px;
     font-weight: bold;
     position: relative;
 }
@@ -341,7 +341,7 @@ button.appoi {
 .separation::after{ 
     content: "";
     position: absolute;
-    width: 3400px;
+    width: 3000px;
     height: 3px;
     left:  400px;
     background-color: #ccc;
@@ -353,17 +353,17 @@ button.appoi {
     font-weight: bold;
     width: 850px;
     font-size: 80px;
-    margin-left: 180px;
+    margin-left: 30px;
     position: absolute;
-    margin-top: -160px;
+    margin-top: -200px;
+    
    
 }
 #bare .phra h1{
     font-weight: bold;
     width: 1200px;
-    font-size: 95px;
-    margin-right: -3100px; 
-    margin-left: 3360px; 
+    font-size: 105px;
+    margin-left: 3000px; 
     font-weight: bold;
     position: absolute;
    margin-top: -100px;
@@ -377,22 +377,20 @@ button.appoi {
 .contener{
     display: grid;
     border-left: 5px solid #f8fafc;
-    width: 3800px;
+    width: 82%;
     height: 1900px;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
-    gap: 20px;
     justify-content: space-between;
     align-content: space-between;
     margin-left: 10%;
-    margin-right: 10%;
     position: relative;
     text-align: center;
    
 }
 
 .items{
-    width: 1000px;
+    width: 800px;
     height: 800px;
     background-color: #f8fafc;
     text-align: center;
@@ -419,13 +417,13 @@ button.appoi {
 }
 
 .smile{
-    width: 4500px;
-    height: 900px;
+    width: 100%;
+    height: 1000px;
     background-color: #0056b3;
     justify-content: center;
     display: flex;
     margin-top: 120px;
-    display: flex;
+    
 }
 .continu{
     width: 30%;
@@ -465,11 +463,11 @@ button.appoi {
 
 /* section bare */
 #tire{
-    width: 4500px;
+    width: 100%;
     height: 800px;
     display: flex;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 10%;
     justify-content: space-between;
     background-color: #ffffff;
@@ -488,7 +486,7 @@ button.appoi {
 #tire .separation h1{
     font-size: 95px;
     margin-top: 140px;
-    margin-left: 3000px;
+    margin-left: 2400px;
     font-weight: bold;
     position: relative;
 }
@@ -497,7 +495,7 @@ button.appoi {
 #tire .separation::after{ 
     content: "";
     position: absolute;
-    width: 3400px;
+    width: 3000px;
     height: 3px;
     left:  50px;
     background-color: #ccc;
@@ -508,7 +506,7 @@ button.appoi {
     font-weight: bold;
     width: 850px;
     font-size: 80px;
-    margin-left: 3510px;
+    margin-left: 3100px;
     position: absolute;
     margin-top: -160px;
    
@@ -516,11 +514,11 @@ button.appoi {
 #tire .phra h1{
     font-weight: bold;
     width: 800px;
-    font-size: 95px;
-    margin-left: 250px; 
+    font-size: 105px;
+    margin-left: 150px; 
     font-weight: bold;
     position: absolute;
-   margin-top: -110px;
+   margin-top: -60px;
    text-transform: uppercase;
 }
 #tire .phra h1 span{
@@ -528,7 +526,7 @@ button.appoi {
 }
 /* section history */
 #history{
-    width: 4300px;
+    width: 100%;
     height: 1200px;
     margin-top: 80px;
     display: flex;
@@ -580,18 +578,18 @@ button.appoi {
 }
  /* section trai */
  #meet{
-    width: 4500px;
+    width: 100%;
     height: 2000px;
     background-color: #f8fafc;
     margin-top: 280px;
 }
  .trai{
-    width: 4500px;
+    width: 4250px;
     height: 400px;
     display: flex;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 10%;
+    /* margin-left: 5%;
+    margin-right: 10%; */
     justify-content: space-between;
     background-color: #f8fafc;
     position: relative;
@@ -603,47 +601,50 @@ button.appoi {
     margin-top: 50px;
     position: relative;
    text-align: center;
-    width:4300px;
+    width:4000px; 
     height: 50%;
+    margin-left: ;
    
 }
-.separation h1{
+/* .separation::before, */
+ #meet .separation::after{ 
+    content: "";
+    position: absolute;
+    width: 3100px;
+    height: 3px;
+    left:  640px;
+    background-color: #ccc;
+    margin-top: -110px;
+    font-weight: bold;
+}
+
+#meet .separation h1{
     font-size: 95px;
-    margin-top: 10px;
-    margin-left: -4000px;
+    margin-top: 150px;
+    margin-left: -3200px;
     font-weight: bold;
     position: relative;
 }
 
-/* .separation::before, */
-.separation::after{ 
-    content: "";
-    position: absolute;
-    width: 3400px;
-    height: 3px;
-    left:  400px;
-    background-color: #ccc;
-    margin-top: -110px;
-}
+
 
 .trai .phra h2{
     font-weight: bold;
     width: 850px;
     font-size: 80px;
-    margin-left: 180px;
+    margin-left: 510px;
     position: absolute;
-    margin-top: -160px;
+    margin-top: -20px;
    
 }
 .trai .phra h1{
     font-weight: bold;
     width: 1200px;
     font-size: 95px;
-    margin-right: -3100px; 
     margin-left: 3000px; 
     font-weight: bold;
     position: absolute;
-   margin-top: -100px;
+   margin-top: 10px;
    text-transform: uppercase;
 }
 .trai .phra h1 span{
@@ -653,17 +654,15 @@ button.appoi {
 /* section doctors */
 .dishes{
     display: flex;
-    width: 4500px;
+    width: 90%;
     height: 600px;
     margin-top: -150px;
     justify-content: space-between;
-   gap: 200px;
+   /* gap: 200px; */
 }
 .dishes .disha{
     height: 1500px;
     width: 700px;
-    margin-left: 10%;
-    margin-right: 10%; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -671,14 +670,15 @@ button.appoi {
     border-radius: 6px;
     margin-top: 180px;
     position: relative;
+    margin-left: 700px;
 
 
 }
 .dishes .dishb{
     height: 1500px;
     width: 700px;
-    margin-left: 10%;
-    margin-right: 10%; 
+    /* margin-left: 10%;
+    margin-right: 10%;  */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -686,7 +686,7 @@ button.appoi {
     border-radius: 6px;
     margin-top: 180px;
     position: absolute;
-    margin-left: 1370px;
+    margin-left: 1550px;
 
 }
 .dishes .dishc{
@@ -699,7 +699,7 @@ button.appoi {
     border-radius: 6px;
     margin-top: 180px;
     position: absolute;
-    margin-left: 2325px;
+    margin-left: 2425px;
 
 }
 .dishes .dishd{
@@ -712,30 +712,30 @@ button.appoi {
     border-radius: 6px;
     margin-top: 180px;
     position: absolute;
-    margin-left: 3250px;
+    margin-left: 3300px;
 
 }
 .dishes .disha img {
-width: 390px;
-height: 390px;
+width: 590px;
+height: 590px;
 margin-bottom: 115px;
 
 }
 .dishes .dishb img {
-    width: 390px;
-    height: 390px;
+    width: 590px;
+    height: 590px;
     margin-bottom: 115px;
     
 }
 .dishes .dishc img {
-    width: 390px;
-    height: 390px;
+    width: 590px;
+    height: 590px;
     margin-bottom: 115px;
     
 }
 .dishes .dishd img {
-    width: 390px;
-    height: 390px;
+    width: 590px;
+    height: 590px;
     margin-bottom: 115px;
     
 }
@@ -837,7 +837,7 @@ margin-bottom: 115px;
 
 /* section client */
 #client{
-    width: 4500px;
+    width: 100%;
     height: 1300px;
     display: flex;
     justify-content: space-between;
@@ -917,12 +917,12 @@ margin-bottom: 115px;
 }
 /* section bare */
 #ligne{
-    width: 4500px;
+    width: 100%;
     height: 1000px;
     display: flex;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%; 
     justify-content: space-between;
     background-color: #ffffff;
     position: relative;
@@ -940,7 +940,7 @@ margin-bottom: 115px;
 #ligne .separation h1{
     font-size: 95px;
     margin-top: 140px;
-    margin-left: 3000px;
+    margin-left: 2400px;
     font-weight: bold;
     position: relative;
 }
@@ -949,9 +949,9 @@ margin-bottom: 115px;
 #ligne .separation::after{ 
     content: "";
     position: absolute;
-    width: 3400px;
+    width: 3200px;
     height: 3px;
-    left:  50px;
+    left:  -70px;
     background-color: #ccc;
     margin-top: -110px;
 }
@@ -960,7 +960,7 @@ margin-bottom: 115px;
     font-weight: bold;
     width: 850px;
     font-size: 90px;
-    margin-left: 3250px;
+    margin-left: 2850px;
     position: absolute;
     margin-top: -160px;
    
@@ -969,7 +969,7 @@ margin-bottom: 115px;
     font-weight: bold;
     width: 1250px;
     font-size: 105px;
-    margin-left: 250px; 
+    margin-left: 40px; 
     font-weight: bold;
     position: absolute;
    margin-top: -150px;
@@ -981,24 +981,23 @@ margin-bottom: 115px;
 
 /* section contact */
 #contact {
-    width: 4300px;
+    width: 100%;
     height: 1300px;
-    margin-top: 80px;
+    margin-top: 10px;
     display: flex;
     margin-left: 10%;
-    margin-right: 10%; 
+    margin-right: 10%;  
     justify-content: space-between;
     background-color: #ffffff;
 }
 #contact .left img{
-    width: 1300px;
-    height: 1300px;
+    width: 100%;
+    height: 100%;
     border-radius: 50px;
 }
 #contact .right{
-    width: 2500px;
-    height: 1300px;
-    margin-left: 10%;
+    width: 50%;
+    height: 100%;
     margin-right: 10%; 
     background-color: #ffffff;
     display: flex;
@@ -1010,11 +1009,10 @@ margin-bottom: 115px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1900px;
+    width: 2600px;
     height: 1100px;
-    margin-left: -680px;
+    margin-left: -880px;
     margin-top: 200px; 
-    padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     flex-direction: column;
@@ -1036,6 +1034,7 @@ margin-bottom: 115px;
     display: flex;
     width: 1750px;
     margin: 15px;
+    height: ;
     flex-direction: column;
   }
   
@@ -1047,15 +1046,15 @@ margin-bottom: 115px;
     font-size: 45px;
     color: #777777;
   }
-  .formulaire textarea{
+  /* .formulaire textarea{
     width: 100%;
-    height: 800px;
+    height: 80px;
     padding: 10px;
     border: 1px solid #777777;
     border-radius: 15px;
 
   }
-  
+   */
   .formulaire input[type="text"],
   .formulaire select {
     width: 100%;
@@ -1068,7 +1067,7 @@ margin-bottom: 115px;
   }
   .formulaire input[type="number"],
   .formulaire textarea, 
-  .formulaire select {
+  /* .formulaire select {
     width: 100%;
     height: 150px;
     padding: 10px;
@@ -1076,7 +1075,7 @@ margin-bottom: 115px;
     border: 1px solid #777777;
     border-radius: 15px;
     box-sizing: border-box;
-  }
+  } */
   .formulaire input[type="date"],
   .formulaire select {
     width: 100%;
@@ -1118,7 +1117,7 @@ margin-bottom: 115px;
 }
 /* section laste */
 #laste{
-    width: 4500px;
+    width: 100%;
     height: 1100px;
     display: flex;
     justify-content: space-between;
@@ -1136,7 +1135,7 @@ margin-bottom: 115px;
     margin-top: 190px;
     text-align: center;
     position: relative;
-    /* margin-bottom: 50px; */
+    
 }
 .milieu h2{
     color: #ffffff;
@@ -1152,9 +1151,7 @@ margin-bottom: 115px;
     height: 100px;
     font-size: 35px;
     border-radius: 15px;
-    /* position: absolute;  */
     margin-left: 100px;
-    /* margin-right: 100px; */
 }
 .milieu .second input{
     background-color:#fff;
@@ -1166,7 +1163,7 @@ margin-bottom: 115px;
     position: absolute;
     margin-left: 400px;
     margin-top: -110px;
-    /* margin-right: 100px; */
+
 }
 .milieu .Subscribe input{
     background-color: #f8fafc;
@@ -1181,7 +1178,7 @@ margin-bottom: 115px;
 }
 /* section footer */
 #footer{
-    width: 4500px;
+    width: 100%;
     height: 1100px;
     display: flex;
     justify-content: space-between;
@@ -1253,6 +1250,11 @@ margin-bottom: 115px;
     line-height: 3;
 
 }
+.a a {
+    color: #ccc;
+    text-decoration: none;
+}
+
 .face .b{
     display: flex;
     flex-direction: column;
@@ -1263,6 +1265,10 @@ margin-bottom: 115px;
     font-size: 30px;
     line-height: 3;
 
+}
+.b a {
+    color: #ccc;
+    text-decoration: none;
 }
 .hello{
     margin-top: 200px;
@@ -1275,7 +1281,7 @@ margin-bottom: 115px;
 }
 
 #pied{
-    width: 4500px;
+    width: 100%;
     height: 300px;
     background-color: #216583;
     display: flex;
