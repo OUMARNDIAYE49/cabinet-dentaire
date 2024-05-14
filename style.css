@@ -19,24 +19,30 @@ body{
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 250px;
+    justify-content: center;
+    height: 190px;
     width: 100%;
     background-color: #ffffff;
     position: fixed;
     top: 0;
+    padding: 50px;
     z-index: 10;
-    border-bottom: 9px solid #f8fafc;
-}
 
+
+}
 
 .header img{
     width: 600px;
-    height: 180px;
-    margin-left: 400px;
+    height: 120px;
+    margin-top: 50px;
     
 }
-
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: solid #bcbcbc9e 5px;
+}
  nav .navbar li{ display: inline-block; }
 
 nav .navbar a{
@@ -44,17 +50,16 @@ nav .navbar a{
     color: #777777;
     width: 300px;
     display: flex;
-    padding: 25px 20px;
     font-size: 55px;
     font-weight: bold;
     text-align: center;
-    margin-right: 25px;
-    margin-right: -10px;
     
     
 }
 
-nav .navbar a:hover{ color:#007bff; cursor: pointer; }
+#home span{
+    color: #0056b3;
+}
 
 button.appoi {
     width: 350px;
@@ -63,7 +68,7 @@ button.appoi {
     border-radius: 15px;
     background-color: #0056b3;
     color: white;
-    margin-right: 350px;
+    
 
 }
 
@@ -325,7 +330,6 @@ button.appoi {
     position: relative;
    text-align: center;
     width:2000px;
-    /* height: 50%; */
     margin-right: 2200px;
    
 }
@@ -363,7 +367,7 @@ button.appoi {
     font-weight: bold;
     width: 1200px;
     font-size: 105px;
-    margin-left: 3000px; 
+    margin-left: 2900px; 
     font-weight: bold;
     position: absolute;
    margin-top: -100px;
@@ -390,7 +394,7 @@ button.appoi {
 }
 
 .items{
-    width: 800px;
+    width: 1000px;
     height: 800px;
     background-color: #f8fafc;
     text-align: center;
@@ -410,6 +414,10 @@ button.appoi {
 .items p{
     color: #777777;
     font-size: 40px;
+    width: 600px;
+    text-align: center;
+    margin-left: 190px;
+    margin-top: -45px;
 }
 .items h5{
     color: #333;
@@ -547,7 +555,7 @@ button.appoi {
     margin-top: -60px;
 }
 #history .right{
-    width: 2100px;
+    width: 2000px;
     height: 900px;
     margin-right: 800px;
     display: flex;
@@ -560,13 +568,13 @@ button.appoi {
 
 }
 #history .right span{
-    font-size: 35px;
+    font-size: 45px;
     text-align: center;
-    width: 1000px;
+    width: 1570px;
     height: 2700px;
     margin-top: 250px;
     margin-left: -1900px;
-    color: #ccc;
+    color: #333;
     line-height: 2;
     
 }
@@ -588,8 +596,6 @@ button.appoi {
     height: 400px;
     display: flex;
     align-items: center;
-    /* margin-left: 5%;
-    margin-right: 10%; */
     justify-content: space-between;
     background-color: #f8fafc;
     position: relative;
@@ -658,7 +664,7 @@ button.appoi {
     height: 600px;
     margin-top: -150px;
     justify-content: space-between;
-   /* gap: 200px; */
+   gap: 200px; 
 }
 .dishes .disha{
     height: 1500px;
@@ -677,8 +683,6 @@ button.appoi {
 .dishes .dishb{
     height: 1500px;
     width: 700px;
-    /* margin-left: 10%;
-    margin-right: 10%;  */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -809,6 +813,7 @@ margin-bottom: 115px;
     background-color: #ffffff
 }
 .dishes .dishc a{
+    display: flex;
     margin-top: 10px;
     font-size: 30px;
     text-decoration: 0;
@@ -818,6 +823,7 @@ margin-bottom: 115px;
     height: 80px;
     border: 5px solid #0056b3;
     text-align: center;
+    justify-content: center;
     color: #0056b3;
     background-color: #ffffff
 }
@@ -882,7 +888,8 @@ margin-bottom: 115px;
 
 }
 #client .right p{
-    width: 1500px;
+    width: 1270px;
+    margin-left: 200px;
 }
 #client .right span{
     font-size: 35px;
@@ -890,28 +897,31 @@ margin-bottom: 115px;
     width: 300px;
     height: 300px;
     margin-top: 250px;
-    margin-left: -1700px;
+    margin-left: -1500px;
     color: #ffffff;
-    line-height: 2;
+    line-height: 1;
     
 }
+
 .point{
-    width: 50px;
-    height: 50px;
     display: flex;
-    
+    justify-content: 10px;
+    align-items: center;
+    margin-left: 400px;
 }
-.point div{
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    background-color: transparent;
+.point .tre{
+    width: 20px;
+    background-color: #bcbcbc9e;
+    border-radius: 100px;
+    height: 20px;
+    margin: 10px;
     margin-top: 700px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
+
 #client .centre p{
     font-size: 50px;
-    width: 1900px;
+    width: 500px;
     margin-left: 210px;
 
 }
@@ -1034,7 +1044,6 @@ margin-bottom: 115px;
     display: flex;
     width: 1750px;
     margin: 15px;
-    height: ;
     flex-direction: column;
   }
   
@@ -1046,15 +1055,7 @@ margin-bottom: 115px;
     font-size: 45px;
     color: #777777;
   }
-  /* .formulaire textarea{
-    width: 100%;
-    height: 80px;
-    padding: 10px;
-    border: 1px solid #777777;
-    border-radius: 15px;
-
-  }
-   */
+ 
   .formulaire input[type="text"],
   .formulaire select {
     width: 100%;
@@ -1067,15 +1068,7 @@ margin-bottom: 115px;
   }
   .formulaire input[type="number"],
   .formulaire textarea, 
-  /* .formulaire select {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    font-size: 40px;
-    border: 1px solid #777777;
-    border-radius: 15px;
-    box-sizing: border-box;
-  } */
+  
   .formulaire input[type="date"],
   .formulaire select {
     width: 100%;
