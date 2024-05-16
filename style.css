@@ -63,7 +63,7 @@ nav .navbar a{
 
 button.appoi {
     width: 350px;
-    height: 190px;
+    height: 120px;
     font-size: 50px;
     border-radius: 15px;
     background-color: #0056b3;
@@ -78,7 +78,7 @@ button.appoi {
     height: 1500px;
     margin-top: 120px;
     display: flex;
-     margin-left: 10%;
+    margin-left: 10%;
     margin-right: 10%;  
     justify-content: space-between;
 }
@@ -111,7 +111,7 @@ button.appoi {
     background-color: #0056b3;
     color: white;
     width: 510px;
-    height: 170px;
+    height: 130px;
     font-size: 30px;
     border-radius: 10px;
     margin-bottom: 300px;
@@ -123,7 +123,7 @@ button.appoi {
     background-color:#ffffff;
     color: black;
     width: 510px;
-    height: 170px;
+    height: 130px;
     font-size: 30px;
     border-radius: 10px;
     margin-bottom: -570px;
@@ -138,18 +138,16 @@ button.appoi {
     justify-content: center;
     align-items: center;
     margin-right:300px;
-
 }
 #maison .right img{
      width: 50%; 
-    
+     margin-right:0px;
 }
 
 /* section rendvous */
 #rendvous{
     width: 100%;
     height: 500px;
-    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -159,9 +157,8 @@ button.appoi {
     width: 30%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-left: 150px;
+  
 }
 
 #rendvous .svr h2{
@@ -192,7 +189,7 @@ button.appoi {
     padding: 40px; 
     display: flex;
     margin-left: 0;
-     margin-right: 1150px; 
+    margin-right: 1150px; 
     text-align: center;
     background-color: #f8fafc;
     font-size: 37px;
@@ -1035,16 +1032,17 @@ margin-bottom: 115px;
     display: flex;
     width: 850px;
     height: 400px;
-    margin: 15px;
+    margin: 40px;
     flex-direction: column;
     margin-top: -190px;
   }
   
   .form3{
     display: flex;
-    width: 1750px;
-    margin: 15px;
+    width: 1700px;
     flex-direction: column;
+    margin-top: -120px;
+    margin-left: 50px;
   }
   
   
@@ -1067,7 +1065,7 @@ margin-bottom: 115px;
     box-sizing: border-box;
   }
   .formulaire input[type="number"],
-  .formulaire textarea, 
+
   
   .formulaire input[type="date"],
   .formulaire select {
@@ -1079,10 +1077,19 @@ margin-bottom: 115px;
     border-radius: 15px;
     box-sizing: border-box;
   }
-  
+  textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    font-size: 40px;
+    border: 1px solid #ccc;
+   resize: none;
+   margin-left: 7px;
+   border-radius: 15px;
+  }
   .formulaire button {
     display: block;
-    width: 100%; 
+    width: 97%; 
     height: 100px;
     padding: 10px;
     background-color: #0056b3;
