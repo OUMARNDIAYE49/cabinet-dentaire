@@ -1232,14 +1232,15 @@ margin-bottom: 115px;
     height: 70px;
     background-color: #216583;
     display: flex;
+    justify-content: center;
 }
 .ref p{
     display: flex;
     color: #ffffff;
     text-align: center;
-    font-size: 15px;
-    margin-left: 650px;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    
 }
 button{
     cursor: pointer;
