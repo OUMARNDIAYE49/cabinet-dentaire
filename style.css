@@ -621,11 +621,11 @@ button.appoi {
     width: 100%;
     height: 700px;
     background-color: var(--whtebbg);
-    margin-top: 0px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+    padding-left: 2%;
 }
  .trai{
     width: 4050px;
@@ -635,7 +635,7 @@ button.appoi {
     justify-content: space-between;
     background-color: var(--whtebbg);
     position: relative;
-    margin-top: 10px;
+    margin: 10px auto;
     
 }
 
@@ -695,25 +695,14 @@ button.appoi {
 }
 
 /* section doctors */
-.dishes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 1000px;
-    /* margin: 70px 0;
-   margin-left: 5px; */
-   margin-left: 1.7%;
-}
+
 .dishe{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     width: 80%;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
-.dishes .disha{
+.dishe .disha{
     height: 100px;
     width: 50px;
     display: flex;
@@ -725,37 +714,38 @@ button.appoi {
     position: relative;
     margin-left: 190px;
 }
-.dishes .disha img {
+
+.dishe .disha img {
     width: 200px;
     height: 200px;
 margin-bottom: 115px;
 
 }
-.dishes .disha p{
+.dishe .disha p{
     margin-top: -100px;
     text-align: center;
     font-size: 17px;
     width: 700px;
 }
-.dishes .disha span{
+.dishe .disha span{
     text-align: center;
     font-size: 15px ;
     color: var(--muted);
     width: 170px;
 }
-.dishes .disha a{
+.dishe .disha a{
     margin-top: 10px;
     font-size: 10px;
     text-decoration: 0;
-    padding: 5px 60px;
+    padding: 8px 60px;
     border-radius: 5px;
-    width:40px;
-    height: 30px;
     border: 2px solid var(--primary);
     text-align: center;
     display: flex;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     color: var(--primary);
+    text-align: center;
+    
     
 }
 
