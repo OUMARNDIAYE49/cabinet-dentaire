@@ -10,7 +10,7 @@
 }
 body{
      font-family: Arial, sans-serif;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
      overflow-x: hidden;  
 }
@@ -89,7 +89,7 @@ button.appoi {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 70px; 
+    margin-top: 10px; 
     /* padding-bottom: 100px; */
 }
 
@@ -109,7 +109,7 @@ button.appoi {
     color: var(--muted);
 }
 
-#maison .left button {
+/* #maison .left button {
     background-color: var(--lightprimary);
     color: var(--white);
     width: 150px;
@@ -119,17 +119,31 @@ button.appoi {
     margin-bottom: 180px;
     position: relative;
     
-}
+} */
 #maison .left .more{
-    position: absolute;
+    /* position: absolute; */
     background-color:#ffffff;
     color: black;
     width: 150px;
-    height: 50px;
+    padding: 10px 20px;
+    /* height: 50px; */
     font-size: 20px;
     border-radius: 5px;
-    margin-bottom: -70px;
-    margin-left: 190px;
+    /* margin-bottom: -70px; */
+    margin-left: 100px;
+    cursor: pointer;
+}
+#maison .left .get{
+    /* position: absolute; */
+    color: black;
+    width: 150px;
+    padding: 10px 20px;
+    /* height: 50px; */
+    font-size: 20px;
+    border-radius: 5px;
+    /* margin-bottom: -70px; */
+    background-color: #0056b3;
+    color: #ffffff;
     
 }
 
@@ -608,6 +622,9 @@ button.appoi {
     height: 700px;
     background-color: var(--whtebbg);
     margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
  .trai{
     width: 4050px;
@@ -645,7 +662,7 @@ button.appoi {
 #meet .separation h1{
     font-size: 35px;
     margin-top: 70px;
-    /* margin-left: -975px; */
+    margin-left: -975px;
     font-weight: bold;
     position: absolute;
 }
@@ -679,12 +696,16 @@ button.appoi {
 /* section doctors */
 .dishes{
     display: flex;
-    width: 90%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 1000px;
-    margin-top: 150px;
-    justify-content: space-between;
-   gap: 200px;
+    margin: 70px 0;
    margin-left: 5px; 
+}
+.dishe{
+    display: flex;
+    width: 80%;
 }
 
 .dishes .disha{
@@ -698,47 +719,6 @@ button.appoi {
     margin-top: 80px;
     position: relative;
     margin-left: 190px;
-
-
-}
-.dishes .dishb{
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 6px;
-    margin-top: 80px;
-    position: absolute;
-    margin-left: 480px;
-
-}
-.dishes .dishc{
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 6px;
-    margin-top: 80px;
-    position: absolute;
-    margin-left: 800px;
-
-}
-.dishes .dishd{
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 6px;
-    margin-top: 80px;
-    position: absolute;
-    margin-left: 1100px;
-
 }
 .dishes .disha img {
     width: 200px;
@@ -746,47 +726,10 @@ button.appoi {
 margin-bottom: 115px;
 
 }
-.dishes .dishb img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 115px;
-    
-}
-.dishes .dishc img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 115px;
-    
-}
-.dishes .dishd img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 115px;
-    
-}
-
 .dishes .disha p{
     margin-top: -100px;
     text-align: center;
     font-size: 17px;
-    width: 700px;
-}
-.dishes .dishb p{
-    text-align: center;
-    font-size: 17px;
-    margin-top: -100px;
-    width: 700px;
-}
-.dishes .dishc p{
-    text-align: center;
-    font-size: 17px;
-    margin-top: -100px;
-    width: 700px;
-}
-.dishes .dishd p{
-    text-align: center;
-    font-size: 17px;
-    margin-top: -100px;
     width: 700px;
 }
 .dishes .disha span{
@@ -794,25 +737,6 @@ margin-bottom: 115px;
     font-size: 15px ;
     color: var(--muted);
     width: 170px;
-}
-.dishes .dishb span{
-    text-align: center;
-    font-size: 15px ;
-    color: var(--muted);
-    width: 170px;
-}
-.dishes .dishc span{
-    text-align: center;
-    font-size: 15px ;
-    color: var(--muted);
-    width: 170px;
-}
-.dishes .dishd span{
-    text-align: center;
-    font-size: 15px ;
-    color: var(--muted);
-    width: 170px;
-
 }
 .dishes .disha a{
     margin-top: 10px;
@@ -825,50 +749,6 @@ margin-bottom: 115px;
     border: 2px solid var(--primary);
     text-align: center;
     display: flex;
-    padding-top: 10px;
-    color: var(--primary);
-    
-}
-.dishes .dishb a{
-    margin-top: 10px;
-    font-size: 10px;
-    text-decoration: 0;
-    padding: 5px 60px;
-    border-radius: 5px;
-    width:40px;
-    height: 30px;
-    border: 2px solid var(--primary);
-    text-align: center;
-    padding-top: 10px;
-    color: var(--primary);
-    
-}
-.dishes .dishc a{
-    display: flex;
-    margin-top: 10px;
-    font-size: 10px;
-    text-decoration: 0;
-    padding: 5px 60px;
-    border-radius: 5px;
-    width:40px;
-    height: 30px;
-    border: 2px solid var(--primary);
-    text-align: center;
-    padding-top: 10px;
-    justify-content: center;
-    color: var(--primary);
-   
-}
- .dishes .dishd a{
-    margin-top: 10px;
-    font-size: 10px;
-    text-decoration: 0;
-    padding: 5px 60px;
-    border-radius: 5px;
-    width:40px;
-    height: 30px;
-    border: 2px solid var(--primary);
-    text-align: center;
     padding-top: 10px;
     color: var(--primary);
     
@@ -1035,23 +915,23 @@ margin-bottom: 115px;
     background-color: var(--white);
 }
 #contact .left {
-    width: 50%;
+    width: 40%;
     height: 100%;
     border-radius: 50px;
 }
 #contact .left img{
     width: 500px;
     height: 600px;
-    border-radius: 1px;
+    border-radius: 28px;
 }
 #contact .right{
-    width: 700px;
+    width: 60%;
     height: 100%; 
     background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: 0 -50px;
 }
 .formulaire {
     display: flex;
@@ -1177,81 +1057,66 @@ margin-bottom: 115px;
 /* section laste */
 #laste{
     width: 100%;
-    height: 400px;
+    height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #f8fafc;
     margin-top: 80px;
 }
 #laste .milieu{
-    width: 1200px;
+    width: 80%;
     height: 300px;
     display: flex;
+    justify-content: center;
     background-color: #216583;
     border-radius: 15px;
-    margin-left: 10%;
+    margin-top: 100px;
+    /* margin-left: 10%;
     margin-right: 10%; 
-    margin-top: 50px;
+    margin-top: 50px; */
     text-align: center;
-    position: relative;
     
+}
+#laste .milieu .millieus{
+    width:80% ;
+    text-align: center;
+}
+#laste .milieu .millieus form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .milieu h2{
     color: #ffffff;
     font-size: 25px;
     text-align: center;
-    margin-left: 350px;
     margin-top: 80px;
 }
-.milieu .First input{
+.milieu .first input{
     background-color: var(--silver);
     color: #ffffff;
-    width: 150px;
+    width: 80%;
     height: 50px;
     font-size: 15px;
     border-radius: 5px;
     border: none;
-    margin-left: 100px;
-    padding-left: 50px;
+    margin-left: 70px;
+    /* padding-left: 50px; */
     margin-top: 30px;
 }
-.First input::placeholder{
+.milieu .first button{
+    width: 80%;
+    height: 50px;
+    /* font-size: 10px; */
+    border-radius: 5px;
+    border: none;
+    margin-left: 70px;
+    /* padding-left: 50px; */
+    margin-top: 30px;
+}
+.first input::placeholder{
     color: var(--white);
     
-}
-.milieu .second input{
-    background-color:var(--silver);
-    color: var(--whtebbg);
-    width: 150px;
-    height: 50px;
-    font-size: 15px;
-    border-radius: 5px;
-    position: absolute;
-    margin-left: 180px;
-    margin-top: -50px;
-    border: none;
-    padding-left: 50px;
-
-}
-.second input::placeholder{
-    color: var(--white);
-    
-}
-.milieu .Subscribe input{
-    background-color: var(--white);
-    color: var(--defaultlinkColor);
-    border: none;
-    width: 190px;
-    height: 50px;
-    font-size: 15px;
-    border-radius: 5px;
-    margin-left: 755px;
-    position: absolute;
-    margin-top: -50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
 }
 /* section footer */
 #footer{
