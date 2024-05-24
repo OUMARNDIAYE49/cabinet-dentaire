@@ -625,6 +625,7 @@ button.appoi {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0 auto;
 }
  .trai{
     width: 4050px;
@@ -700,12 +701,16 @@ button.appoi {
     align-items: center;
     width: 100%;
     height: 1000px;
-    margin: 70px 0;
-   margin-left: 5px; 
+    /* margin: 70px 0;
+   margin-left: 5px; */
+   margin-left: 1.7%;
 }
 .dishe{
     display: flex;
+    /* justify-content: center;
+    align-items: center; */
     width: 80%;
+    margin: 0 auto;
 }
 
 .dishes .disha{
@@ -1101,11 +1106,12 @@ margin-bottom: 115px;
     margin-top: 30px;
 }
 .milieu .first button{
-    width: 80%;
+    width: 190px;
     border-radius: 5px;
     border: none;
     margin-left: 70px;
     margin-top: 30px;
+    height: 50px;
 }
 .first input::placeholder{
     color: var(--white);
@@ -1240,7 +1246,9 @@ margin-bottom: 115px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    
+    /* font-size: 15px;
+    margin-left: 650px;
+    margin-top: 30px; */
 }
 button{
     cursor: pointer;
