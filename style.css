@@ -90,7 +90,7 @@ button.appoi {
     flex-direction: column;
     justify-content: center;
     margin-top: 10px; 
-    /* padding-bottom: 100px; */
+   
 }
 
 #maison .left h1{
@@ -109,17 +109,6 @@ button.appoi {
     color: var(--muted);
 }
 
-/* #maison .left button {
-    background-color: var(--lightprimary);
-    color: var(--white);
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    border-radius: 5px;
-    margin-bottom: 180px;
-    position: relative;
-    
-} */
 #maison .left .more{
     /* position: absolute; */
     background-color:#ffffff;
